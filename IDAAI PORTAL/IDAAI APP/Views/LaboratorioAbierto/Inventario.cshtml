@@ -1,0 +1,299 @@
+﻿@{
+    ViewData["Title"] = "Inventario";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+<div id="pantalla" class="container-fluid">
+    <div class="row pt-4 pb-5 px-4 shadow bg-light rounded">
+        <div class="pb-2 border-bottom" align="center">
+            <h4 class="fw-bold">Inventario</h4>
+            <input type="hidden" id="estado" />
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-4 input-wrapper">
+                <label class="fw-bold mb-2" for="nombre">Nombre</label>
+                <input type="text" class="form-control input-text" maxlength="100" id="nombre" title="Nombre del registro en el inventario" />
+            </div>
+            <div class="col-md-8 mt-4">
+                <div class=" d-grid gap-2 d-md-block">
+                    <div class="">
+                        <button class="btn btn-primary" onclick="consultar()" title="Consultar inventario">
+                            Consultar
+                            <i class="bi-search"></i>
+                        </button>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalRegistrar" title="Crear nuevo registro en el inventario">
+                            Agregar
+                            <i class="bi-plus"></i>
+                        </button>
+                        <button class="btn btn-primary" onclick="sincronizar()" title="Sincronizar Inventario">
+                            Sincronizar
+                            <i class="bi-arrow-counterclockwise"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="location.reload(true)" title="Reiniciar pantalla">
+                            Limpiar
+                            <i class="bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="contenedorTabla" class="mt-5">
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Modal Registrar -->
+    <div class="modal fade" id="modalRegistrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Crear registro en el inventario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3 col-md-12 row">
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalRegistrarNombre">Nombre*</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalRegistrarNombre" title="Nombre del nuevo registro en el inventario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalRegistrarCantidadTotal">Cantidad total</label>
+                        <input type="number" class="form-control" id="modalRegistrarCantidadTotal" title="Cantidad total de objetos del nuevo registro en el inventario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalRegistrarDescripcion">Descripción*</label>
+                        <textarea type="text" class="form-control input-text" rows="4" maxlength="300" id="modalRegistrarDescripcion" title="Descripción del nuevo registro en el inventario" ></textarea>
+                    </div>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="registrar()">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar -->
+    <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar registro en el inventario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3 col-md-12 row">
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalEditarNombre">Nombre</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalEditarNombre" title="Nombre del registro en el inventario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalEditarCantidadtotal">Cantidad total</label>
+                        <input type="number" class="form-control" id="modalEditarCantidadtotal" title="Cantidad total de objetos del registro en el inventario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalEditarCantidaddisponible">Cantidad disponible</label>
+                        <input type="number" class="form-control" id="modalEditarCantidaddisponible" title="Cantidad disponible de objetos del registro en el inventario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalEditarDescripcion">Descripción</label>
+                        <textarea type="text" class="form-control input-text" rows="4" maxlength="300" id="modalEditarDescripcion" title="Descripción del registro en el inventario" ></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="editar()">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+</style>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    $().ready(function () {
+        prepararPantalla(Pantalla.Inventario);
+        consultar()
+    })
+
+    function consultar(recarga = false) {
+
+        $.ajax({
+            cache: false,
+            type: "GET",
+            url: `@Url.Action("ListarInventario", "Operaciones")`,
+            data: obtenerQuery()[PantallaActual],
+            success: function (response) {
+                if (response.length == 0 || response == null) {
+                    showToastError("No se encontraron resultados");
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                crearTabla(response, Info[PantallaActual], recarga);
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function registrar() {
+        if ($("#modalRegistrarNombre").val() == '' || $("#modalRegistrarDescripcion").val() == '') {
+            showToastError('Los campos: Nombre y Descripción son obligatorios');
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "POST",
+            url: '@Url.Action("RegistrarInventario", "Operaciones")',
+            data: obtenerRegistrarRequest()[PantallaActual],
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalRegistrar").modal("hide");
+                showToastOk('El registro se creó correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function editar() {
+        if ($("#modalEditarCantidadTotal").val() < $("#modalEditarCantidadDisponible").val()) {
+            showToastError("Debe ingresar cantidades válidas")
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "PUT",
+            url: '@Url.Action("EditarInventario", "Operaciones")',
+            data: obtenerEditarRequest()[PantallaActual],
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalEditar").modal("hide");
+                showToastOk('El registro se actualizó correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function eliminar() {
+        var request = {
+            Id: idSeleccionado
+        }
+
+        $.ajax({
+            cache: false,
+            type: "DELETE",
+            url: `@Url.Action("EliminarInventario", "Operaciones")`,
+            data: request,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalConfirmarEliminacion").modal("hide");
+                showToastOk('El registro fue eliminado correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                $("#modalConfirmarEliminacion").modal("hide");
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function sincronizar() {
+
+        $.ajax({
+            cache: false,
+            type: "POST",
+            url: '@Url.Action("SincronizarInventario", "Operaciones")',
+            data: null,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                showToastOk(response);
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }   
+
+</script>

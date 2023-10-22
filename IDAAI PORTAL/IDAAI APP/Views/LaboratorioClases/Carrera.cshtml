@@ -1,0 +1,277 @@
+﻿@{
+    ViewData["Title"] = "Carreras";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+<div id="pantalla" class="container-fluid">
+    <div class="row pt-4 pb-5 px-4 shadow bg-light rounded">
+        <div class="pb-2 border-bottom" align="center">
+            <h4 class="fw-bold">Carreras</h4>
+            <input type="hidden" id="estado" />
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="fw-bold mb-2" for="modulo">Módulo</label>
+                    <select class="form-control" id="modulo" title="Módulo del estudiante" asp-items="ViewBag.Modulos">
+                        <option value="0">Seleccione</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3 input-wrapper">
+                <label class="fw-bold mb-2" for="nombre">Nombre</label>
+                <input type="text" class="form-control input-text" maxlength="100" id="nombre" title="Nombre de la carrera" />
+            </div>
+            <div class="col-md-6 mt-4">
+                <div class=" d-grid gap-2 d-md-block">
+                    <div class="">
+                        <button class="btn btn-primary" onclick="consultar()" title="Consultar carreras">
+                            Consultar
+                            <i class="bi-search"></i>
+                        </button>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalRegistrar" title="Registrar nueva carrera">
+                            Agregar
+                            <i class="bi-plus"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="location.reload(true)" title="Reiniciar pantalla">
+                            Limpiar
+                            <i class="bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="contenedorTabla" class="mt-5">
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Modal Registrar -->
+    <div class="modal fade" id="modalRegistrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrar carrera</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3 col-md-12 row">
+                    <div class="mb-2 col-md-4">
+                        <div class="form-group">
+                            <label class="fw-bold mb-2" for="modalRegistrarModulo">Módulo*</label>
+                            <select class="form-control" id="modalRegistrarModulo" asp-items="ViewBag.Modulos" title="Nombre del módulo">
+                                <option value="0">Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-2 col-md-8">
+                        <label class="fw-bold mb-2" for="modalRegistrarNombre">Nombre*</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalRegistrarNombre" title="Nombre de la carrera" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="registrar()">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar -->
+    <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar carrera</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3 col-md-12 row">
+                    <div class="mb-2 col-md-4">
+                        <div class="form-group">
+                            <label class="fw-bold mb-2" for="modalEditarModulo">Módulo</label>
+                            <select class="form-control" id="modalEditarModulo" asp-items="ViewBag.Modulos">
+                                <option value="0">Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-2 col-md-8">
+                        <label class="fw-bold mb-2" for="modalEditarNombre">Nombre</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalEditarNombre" title="Nombre de la carrera" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="editar()">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+</style>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    $().ready(function () {
+        prepararPantalla(Pantalla.Carrera);
+        if ($("#moduloActual").val() && $("#moduloActual").val() != '0') {
+            consultar()
+        }
+    })
+
+    function consultar(recarga = false) {
+        if ($("#nombre").val() == '' && $("#modulo").val() == 0) {
+            showToastError('Debe ingresar al menos un criterio de búsqueda');
+            return;
+        }
+        if ($("#modulo").val() == 0) {
+            showToastError('El campo Módulo es obligatorio');
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "GET",
+            url: `@Url.Action("ListarCarrera", "Operaciones")`,
+            data: obtenerQuery()[PantallaActual],
+            success: function (response) {
+                if (response.length == 0 || response == null) {
+                    showToastError("No se encontraron resultados");
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                crearTabla(response, Info[PantallaActual], recarga);
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function registrar() {
+        if ($("#modalRegistrarModulo").val() == 0 || $("#modalRegistrarNombre").val() == '') {
+            showToastError('Los campos: Módulo y Nombre son obligatorios');
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "POST",
+            url: '@Url.Action("RegistrarCarrera", "Operaciones")',
+            data: obtenerRegistrarRequest()[PantallaActual],
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalRegistrar").modal("hide");
+                showToastOk('El registro se creó correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function editar() {
+        if (!esEmail($("#modalEditarEmail").val())) {
+            showToastError("Debe ingresar un Email válido");
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "PUT",
+            url: '@Url.Action("EditarCarrera", "Operaciones")',
+            data: obtenerEditarRequest()[PantallaActual],
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalEditar").modal("hide");
+                showToastOk('El registro se actualizó correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function eliminar() {
+        var request = {
+            Id: idSeleccionado
+        }
+
+        $.ajax({
+            cache: false,
+            type: "DELETE",
+            url: `@Url.Action("EliminarCarrera", "Operaciones")`,
+            data: request,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalConfirmarEliminacion").modal("hide");
+                showToastOk('El registro fue eliminado correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                $("#modalConfirmarEliminacion").modal("hide");
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+</script>

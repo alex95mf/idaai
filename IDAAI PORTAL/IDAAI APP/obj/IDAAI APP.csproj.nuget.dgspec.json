@@ -1,0 +1,185 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Archivos\\Materia Integradora\\IDAAI\\Proyecto IDAAI\\IDAAI PORTAL\\IDAAI APP\\IDAAI APP.csproj": {}
+  },
+  "projects": {
+    "D:\\Archivos\\Materia Integradora\\IDAAI\\Proyecto IDAAI\\IDAAI PORTAL\\IDAAI APP\\IDAAI APP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Archivos\\Materia Integradora\\IDAAI\\Proyecto IDAAI\\IDAAI PORTAL\\IDAAI APP\\IDAAI APP.csproj",
+        "projectName": "IDAAI APP",
+        "projectPath": "D:\\Archivos\\Materia Integradora\\IDAAI\\Proyecto IDAAI\\IDAAI PORTAL\\IDAAI APP\\IDAAI APP.csproj",
+        "packagesPath": "C:\\Users\\alex9\\.nuget\\packages\\",
+        "outputPath": "D:\\Archivos\\Materia Integradora\\IDAAI\\Proyecto IDAAI\\IDAAI PORTAL\\IDAAI APP\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alex9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "DevExtreme.AspNet.Data": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "DevExtreme.Web": {
+              "target": "Package",
+              "version": "[22.2.3, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.3, )"
+            },
+            "System.Globalization": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "datatables.net-colreorder": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "datatables.net-colreorder-dt": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "datatables.net-datetime": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "datatables.net-dt": {
+              "target": "Package",
+              "version": "[1.13.1, )"
+            },
+            "datatables.net-fixedcolumns-dt": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "datatables.net-fixedheader": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "datatables.net-fixedheader-dt": {
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "datatables.net-keytable": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "datatables.net-keytable-dt": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "datatables.net-responsive-dt": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "datatables.net-rowgroup-dt": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "datatables.net-rowreorder-dt": {
+              "target": "Package",
+              "version": "[1.3.1, )"
+            },
+            "datatables.net-scroller-dt": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "datatables.net-searchbuilder-dt": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "datatables.net-searchpanes-dt": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "datatables.net-select-dt": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "datatables.net-staterestore-dt": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "jquery.datatables": {
+              "target": "Package",
+              "version": "[1.10.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  idaaiapp:
+    image: idaaiapp:dev
+    container_name: IDAAI_APP
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "IDAAI APP"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - NUGET_PACKAGES=C:\.nuget\packages
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+    volumes:
+      - D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP:C:\app
+      - D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP:C:\src
+      - C:\Users\alex9\onecoremsvsmon\17.4.11004.1991:C:\remote_debugger:ro
+      - C:\Users\alex9\.nuget\packages\:c:\.nuget\packages:ro
+      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:c:\.nuget\fallbackpackages:ro
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"C:\\app\\bin\\Debug\\net7.0\\IDAAI APP.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
+      com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"

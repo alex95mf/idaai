@@ -1,0 +1,286 @@
+﻿@{
+    ViewData["Title"] = "Asistencia";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+<div id ="pantalla" class="container-fluid">
+    <div class="row pt-4 pb-5 px-4 shadow bg-light rounded">
+        <div class="pb-2 border-bottom" align="center">
+            <h4 class="fw-bold">Registros de Asistencia</h4>
+            <input type="hidden" id="estado" />
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-2 input-wrapper">
+                <label class="fw-bold mb-2" for="nombres">Nombres</label>
+                <input type="text" class="form-control input-text" maxlength="100" id="nombres" title="Nombres del estudiante" />
+            </div>
+            <div class="col-md-2 input-wrapper">
+                <label class="fw-bold mb-2" for="apellidos">Apellidos</label>
+                <input type="text" class="form-control input-text" maxlength="100" id="apellidos" title="Apellidos del estudiante" />
+            </div>
+            <div class="col-md-2 input-wrapper">
+                <label class="fw-bold mb-2" for="matricula">Matrícula</label>
+                <input type="text" class="form-control input-text" maxlength="10" id="matricula" title="Matrícula del estudiante" />
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="fw-bold mb-2" for="carrera">Carrera</label>
+                    <select class="form-control" id="carrera" title="Carrera del estudiante" asp-items="ViewBag.Carreras">
+                        <option value="0">Seleccione</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class=" d-grid gap-2 d-md-block">
+                    <div class="">
+                        <button class="btn btn-primary" onclick="consultar()" title="Consultar Registros de Asistencia">
+                            Consultar
+                            <i class="bi-search"></i>
+                        </button>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalRegistrar" title="Crear Registro de Asistencia">
+                            Agregar
+                            <i class="bi-plus"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="location.reload(true)" title="Reiniciar pantalla">
+                            Limpiar
+                            <i class="bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="contenedorTabla" class="mt-5">
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Modal Registrar -->
+    <div class="modal fade" id="modalRegistrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Crear registro de asistencia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3">
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalRegistrarMatricula">Matrícula*</label>
+                        <input type="text" class="form-control input-text" maxlength="10" id="modalRegistrarMatricula" title="Matrícula del estudiante" />
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-group">
+                            <label class="fw-bold" for="modalRegistrarFecha">Fecha*</label>
+                            <input type="date" id="modalRegistrarFecha" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" title="Fecha registro de asistencia" required />
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-group">
+                            <label class="fw-bold mb-2" for="modalRegistrarEsAsistencia">Estado asistencia*</label>
+                            <select class="form-control" id="modalRegistrarEsAsistencia">                              
+                                <option value="true">Asistencia</option>
+                                <option value="false">Falta</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="registrar()">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+
+</style>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    $().ready(function () {
+        prepararPantalla(Pantalla.Asistencia);
+        consultar()
+    })
+
+    function consultar(recarga = false) {
+
+        var query = {
+            Nombres: $("#nombres").val(),
+            Apellidos: $("#apellidos").val(),
+            Matricula: $("#matricula").val(),
+            Email: $("#email").val(),
+            Carrera: $("#carrera").val(),
+            Modulo: "LA"
+        }
+
+        $.ajax({
+            cache: false,
+            type: "GET",
+            url: `@Url.Action("ListarAsistencia", "Operaciones")`,
+            data: query,
+            success: function (response) {
+                if (response.length == 0 || response == null) {
+                    showToastError("No se encontraron resultados");
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                crearTabla(response, Info[PantallaActual], recarga);
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function registrar() {
+        if ($("#modalRegistrarFecha").val() == '' || $("#modalRegistrarEstadoAsistencia").val() == '' || $("#modalRegistrarMatricula").val() == '') {
+            showToastError('Los campos: Matrícula, Fecha y Estado asistencia son obligatorios');
+            return;
+        }
+        if ($("#modalRegistrarMatricula").val().length < 9) {
+            showToastError("La matrícula debe ser válida");
+            return;
+        }
+
+        var request = {
+            Matricula: $("#modalRegistrarMatricula").val(),
+            Fecha: $("#modalRegistrarFecha").val(),
+            EsAsistencia: $("#modalRegistrarEsAsistencia").val(),
+            Modulo: "LA"
+        }
+        console.log(request)
+        $.ajax({
+            cache: false,
+            type: "POST",
+            url: '@Url.Action("RegistrarAsistencia", "Operaciones")',
+            data: request,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalRegistrar").modal("hide");
+                showToastOk('El registro se creó correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function editar(id) {
+        var esAsistencia = true;
+        var contador = 0;
+        respuestaTotal.forEach(registro => {
+            contador++
+            if(registro.id == id){
+                if(registro.estadoAsistencia == 'Asistencia'){
+                    esAsistencia = false;
+                }
+            }
+            if(contador == respuestaTotal.length){
+                var request = {
+                    id: id,
+                    esAsistencia: esAsistencia
+                }
+
+                $.ajax({
+                    cache: false,
+                    type: "PUT",
+                    url: '@Url.Action("EditarAsistencia", "Operaciones")',
+                    data: request,
+                    success: function (response) {
+                        if (response == null) {
+                            showToastError("Ha ocurrido un error");
+                            return;
+                        }
+                        if (response.redirectToUrl) {
+                            window.location.href = response.redirectToUrl;
+                            return
+                        }
+                        consultar(true);
+                        $("#modalEditar").modal("hide");
+                        showToastOk('El registro se actualizó correctamente');
+                    },
+                    error: function (xhr) {
+                        showToastError(xhr.responseText);
+                        return false;
+                    },
+                    beforeSend: function () {
+                        mostrarCarga(true);
+                    },
+                    complete: function () {
+                        mostrarCarga(false);
+                    }
+                });
+
+            }
+        })             
+    }
+
+    function eliminar() {
+        var request = {
+            Id: idSeleccionado
+        }
+
+        $.ajax({
+            cache: false,
+            type: "DELETE",
+            url: `@Url.Action("EliminarAsistencia", "Operaciones")`,
+            data: request,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalConfirmarEliminacion").modal("hide");
+                showToastOk('El registro fue eliminado correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                $("#modalConfirmarEliminacion").modal("hide");
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+</script>

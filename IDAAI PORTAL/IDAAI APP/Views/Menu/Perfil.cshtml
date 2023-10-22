@@ -1,0 +1,176 @@
+﻿@{
+    ViewData["Title"] = "Perfil de Usuario";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+
+<div class="d-flex align-items-center justify-content-center">
+    <div class="row d-flex align-items-center justify-content-evenly px-4 mt-5 shadow bg-light rounded mb-5 col-lg-12 col-md-8 col-sm-9 col-11">
+        <div class="col-12 mt-3 mb-3 pb-2 border-bottom">
+            <h2 class="mb-3 text-center fw-bold mt-3">@ViewData["Title"]</h2>
+            <input type="hidden" id="usuarioId" value="@ViewBag.Id" />
+        </div>
+
+        <div class="col-lg-6 mx-auto">
+            <div class="col-12 col-md-12 mt-3">
+                <img width="175" height="150" class="d-block mx-auto" src="~/images/signUp.png" alt="Perfil de usuario" />
+            </div>
+        </div>
+
+        <div class="col-lg-6 mx-auto">
+            <div class="col-8 col-sm-5 mx-auto col-md-6 col-lg-8 mt-2 mb-2">
+                <form id="loginForm">
+                    <div class="col-xs-8">
+                        <div class="ml-5 mt-2">
+                            <label class="fw-bold mb-2 mt-4 ml-5" for="txtUsuario">Usuario:</label>
+                        </div>
+
+                        <div class="text-start">
+                            <h4 id="txtUsuario">@ViewBag.Usuario</h4>
+                        </div>
+
+                        <div class="ml-5 mt-2">
+                            <label class="fw-bold mb-2 mt-4 ml-5" for="txtEmail">Email:</label>
+                        </div>
+
+                        <div class="text-start">
+                            <h4 id="txtEmail">@ViewBag.Email</h4>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button onClick="seleccionarDatosUsuario()" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario" 
+                            title="Editar usuario" id="botonAccion" type="button" class="botonAccionbtn btn-primary bg-gradient px-3 mt-2 mb-2 py-3 rounded-pill" 
+                            style="">Actualizar Datos
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-5">
+        </div>
+    </div>
+
+    <!-- Modal Editar Usuario -->
+    <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3 col-md-12 row">
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalUsuario">Usuario</label>
+                        <input type="text" class="form-control input-text" maxlength="25" id="modalUsuario" title="Nombre de usuario" />
+                    </div>
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalEmail">Email</label>
+                        <input type="email" class="form-control input-text" maxlength="50" id="modalEmail" title="Email de usuario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalPasswordAnterior">Contraseña anterior</label>
+                        <input type="password" class="form-control input-text" maxlength="100" id="modalPasswordAnterior" title="Contraseña anterior del usuario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalPasswordNueva">Contraseña nueva</label>
+                        <input type="password" class="form-control input-text" maxlength="100" id="modalPasswordNueva" title="Contraseña nueva del usuario" />
+                    </div>
+                    <div class="mb-2 col-md-12">
+                        <label class="fw-bold mb-2" for="modalPasswordNuevaConfirmar">Confirmar Contraseña nueva</label>
+                        <input type="password" class="form-control input-text" maxlength="100" id="modalPasswordNuevaConfirmar" title="Contraseña nueva del usuario" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="editarUsuario()">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    var usuarioId = $("#usuarioId").val();
+
+    var txtUsuario = $("#txtUsuario").text();
+    var txtEmail = $("#txtEmail").text();
+
+    function seleccionarDatosUsuario(){
+        $("#modalUsuario").val(txtUsuario);
+        if(txtEmail != '-'){
+            $("#modalEmail").val(txtEmail);
+        }        
+    }
+
+    function editarUsuario(){
+        if($("#modalUsuario").val() == ''){
+            showToastError('Debe ingresar un usuario')
+            return
+        }
+
+        if (!esEmail($("#modalEmail").val())) {
+            showToastError('Debe ingresar un email válido')
+            return
+        }
+
+        if ($("#modalPasswordNueva").val() != '' && $("#modalPasswordAnterior").val() == '') {
+            showToastError('Debe ingresar la contraseña anterior')
+            return
+        }
+
+        if ($("#modalPasswordNueva").val() == '' && $("#modalPasswordAnterior").val() != '') {
+            showToastError('Debe ingresar la contraseña nueva')
+            return
+        }
+
+        if ($("#modalPasswordNueva").val() != $("#modalPasswordNuevaConfirmar").val()) {
+            showToastError('La contraseña nueva no coincide')
+            return
+        }
+
+        var request = {
+            Id: $("#usuarioId").val(),
+            Usuario: $("#modalUsuario").val(),
+            PasswordAnterior: $("#modalPasswordAnterior").val(),
+            Password: $("#modalPasswordNueva").val(),
+            Email: $("#modalEmail").val()
+        }
+
+        $.ajax({
+            cache: false,
+            type: "PUT",
+            url: '@Url.Action("EditarUsuario", "Operaciones")',
+            data: request,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                $("#modalEditarUsuario").modal("hide");
+                showToastOk('El usuario se actualizó correctamente');
+                window.location.href = response.redirectToUrl;
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+        
+    }
+
+</script>

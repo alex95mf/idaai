@@ -1,0 +1,47 @@
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\IDAAI API.deps.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\IDAAI API.runtimeconfig.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\out\web.config
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\appsettings.Development.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\appsettings.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\out\appsettings.Development.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\out\appsettings.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\out\IDAAI API.deps.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\out\IDAAI API.runtimeconfig.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\IDAAI API.exe
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\IDAAI API.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.OpenApi.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\AutoMapper.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\CsvHelper.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Newtonsoft.Json.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Web.Mvc.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Web.WebPages.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Runtime.Caching.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Web.Razor.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\Microsoft.Identity.Client.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Security.Permissions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Windows.Extensions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\System.Drawing.Common.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\bin\Debug\IDAAI API.pdb
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\obj\Debug\docker-compose.dcproj.CopyComplete

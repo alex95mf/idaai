@@ -1,0 +1,63 @@
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\IDAAI API.exe
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\appsettings.Development.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\appsettings.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\IDAAI API.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\IDAAI API.runtimeconfig.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\IDAAI API.pdb
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\AutoMapper.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Azure.Core.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Azure.Identity.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\CsvHelper.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Dapper.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Web.Mvc.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Web.Razor.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Web.Helpers.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Web.WebPages.Deployment.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Web.WebPages.Razor.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Web.WebPages.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.AspNetCore.OpenApi.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.Data.SqlClient.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.EntityFrameworkCore.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.Identity.Client.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.IdentityModel.Abstractions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.IdentityModel.Logging.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.IdentityModel.Protocols.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.IdentityModel.Tokens.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.OpenApi.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.SqlServer.Server.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.Web.Infrastructure.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Microsoft.Win32.SystemEvents.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Newtonsoft.Json.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Configuration.ConfigurationManager.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Drawing.Common.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.IdentityModel.Tokens.Jwt.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Memory.Data.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Runtime.Caching.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Security.Cryptography.ProtectedData.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Security.Permissions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\System.Windows.Extensions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI API\IDAAI API\out\IDAAI API.deps.json

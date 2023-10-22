@@ -1,0 +1,51 @@
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\appsettings.Development.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\appsettings.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\IDAAI APP.staticwebassets.runtime.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\IDAAI APP.exe
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\IDAAI APP.deps.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\IDAAI APP.runtimeconfig.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\IDAAI APP.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\IDAAI APP.pdb
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\DevExtreme.AspNet.Data.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Net.Http.Formatting.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\Newtonsoft.Json.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\Newtonsoft.Json.Bson.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\RestSharp.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Security.Permissions.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.csproj.AssemblyReference.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.GeneratedMSBuildEditorConfig.editorconfig
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.AssemblyInfoInputs.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.AssemblyInfo.cs
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.csproj.CoreCompileInputs.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.MvcApplicationPartsAssemblyInfo.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.RazorAssemblyInfo.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.RazorAssemblyInfo.cs
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\staticwebassets\msbuild.IDAAI APP.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\staticwebassets\msbuild.build.IDAAI APP.props
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.IDAAI APP.props
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.IDAAI APP.props
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\staticwebassets.pack.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\staticwebassets.build.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\staticwebassets.development.json
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\Views\Shared\_LayoutAsistenciaEstudiante.cshtml.rz.scp.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\Views\Shared\_LayoutLaboratorioAbierto.cshtml.rz.scp.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\Views\Shared\_LayoutLaboratorioClases.cshtml.rz.scp.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\Views\Shared\_LayoutMenu.cshtml.rz.scp.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\Views\Shared\_Lib.cshtml.rz.scp.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\bundle\IDAAI APP.styles.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\scopedcss\projectbundle\IDAAI APP.bundle.scp.css
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.csproj.CopyComplete
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\refint\IDAAI APP.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.pdb
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\IDAAI APP.genruntimeconfig.cache
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\obj\Release\net7.0\ref\IDAAI APP.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\CsvHelper.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Web.Mvc.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Web.Razor.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Web.Helpers.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Web.WebPages.Deployment.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Web.WebPages.Razor.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\System.Web.WebPages.dll
+D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\bin\Release\net7.0\Microsoft.Web.Infrastructure.dll

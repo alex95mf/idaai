@@ -1,0 +1,466 @@
+﻿@{
+    ViewData["Title"] = "Estudiantes";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+<div id="pantalla" class="container-fluid">
+    <div class="row pt-4 pb-5 px-4 shadow bg-light rounded">
+        <div class="pb-2 border-bottom" align="center">
+            <h4 class="fw-bold">Estudiantes</h4>
+            <input type="hidden" id="estado" />
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="fw-bold mb-2" for="modulo">Módulo</label>
+                    <select class="form-control" id="modulo" title="Módulo del estudiante" asp-items="ViewBag.Modulos">
+                        <option value="0">Seleccione</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2 input-wrapper">
+                <label class="fw-bold mb-2" for="nombres">Nombres</label>
+                <input type="text" class="form-control input-text" maxlength="100" id="nombres" title="Nombres del estudiante" />
+            </div>
+            <div class="col-md-2 input-wrapper">
+                <label class="fw-bold mb-2" for="apellidos">Apellidos</label>
+                <input type="text" class="form-control input-text" maxlength="100" id="apellidos" title="Apellidos del estudiante" />
+            </div>
+            <div class="col-md-2 input-wrapper">
+                <label class="fw-bold mb-2" for="matricula">Matrícula</label>
+                <input type="text" class="form-control input-text" maxlength="10" id="matricula" title="Matrícula del estudiante" />
+            </div>
+            <div class="col-md-2 input-wrapper">
+                <label class="fw-bold mb-2" for="email">Email</label>
+                <input type="email" class="form-control input-text" maxlength="50" id="email" title="Email del estudiante" />
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label class="fw-bold mb-2" for="carrera">Carrera</label>
+                    <select class="form-control" id="carrera" title="Carrera del estudiante" asp-items="ViewBag.Carreras">
+                        <option value="0">Seleccione</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4">
+                <div class=" d-grid gap-2 d-md-block">
+                    <div class="">
+                        <button class="btn btn-primary" onclick="consultar()" title="Consultar estudiantes">
+                            Consultar
+                             <i class="bi-search"></i>
+                        </button>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalRegistrar" title="Registrar nuevo estudiante">
+                            Agregar
+                            <i class="bi-plus"></i>
+                        </button>
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalRegistrarGrupo" title="Registrar grupo de estudiantes">
+                            Grupo
+                            <i class="bi-plus"></i>
+                        </button>
+                        <button class="btn btn-secondary" onclick="location.reload(true)" title="Reiniciar pantalla">
+                            Limpiar
+                            <i class="bi-trash"></i>
+                        </button>
+                    </div>              
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="contenedorTabla" class="mt-5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registrar -->
+    <div class="modal fade" id="modalRegistrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrar nuevo estudiante</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3 col-md-12 row">
+                    <div class="mb-2 col-md-6">
+                        <div class="form-group">
+                            <label class="fw-bold mb-2" for="modalRegistrarModulo">Módulo*</label>
+                            <select class="form-control" id="modalRegistrarModulo" asp-items="ViewBag.Modulos" title="Nombre del módulo">
+                                <option value="0">Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-2 col-md-6">
+                        <div class="form-group">
+                            <label class="fw-bold mb-2" for="modalRegistrarCarrera">Carrera</label>
+                            <select class="form-control" id="modalRegistrarCarrera" asp-items="ViewBag.Carreras">
+                                <option value="0">Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalRegistrarNombres">Nombres*</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalRegistrarNombres" title="Nombres del estudiante" />
+                    </div>
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalRegistrarApellidos">Apellidos*</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalRegistrarApellidos" title="Apellidos del estudiante" />
+                    </div>
+                    <div class="mb-2 col-md-6">
+                        <label class="fw-bold mb-2" for="modalRegistrarMatricula">Matrícula*</label>
+                        <input type="text" class="form-control input-text" maxlength="10" id="modalRegistrarMatricula" title="Matrícula del estudiante" />
+                    </div>
+                    <div class="mb-2 col-md-6">
+                        <label class="fw-bold mb-2" for="modalRegistrarEmail">Email</label>
+                        <input type="email" class="form-control input-text" maxlength="50" id="modalRegistrarEmail" title="Email del estudiante" />
+                    </div>
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalRegistrarDireccion">Dirección</label>
+                        <textarea class="form-control" id="modalRegistrarDireccion" maxlength="100" rows="4">
+                        </textarea>
+                    </div>                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="registrar()">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Modal Registrar Grupo -->
+    <div class="modal fade" id="modalRegistrarGrupo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrar grupo de estudiantes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="registrarGrupoForm" enctype="multipart/form-data">
+                    <div class="modal-body px-4 mb-3 col-md-12 row">
+                        <div class="mb-2 col-md-6">
+                            <div class="form-group">
+                                <label class="fw-bold mb-2" for="grupoModulo">Módulo*</label>
+                                <select class="form-control" id="grupoModulo" asp-items="ViewBag.Modulos" title="Nombre del módulo">
+                                    <option value="0">Seleccione</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label class="fw-bold mb-2" for="grupoEstudiantes">Estudiantes*</label>
+                            <input type="file" accept=".csv" class="form-control input-text" maxlength="100" name="grupoEstudiantes" id="grupoEstudiantes" title="Archivo contenedor de grupo de estudiantes a registrar" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success" onclick="registrarGrupo()">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Editar -->
+    <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar estudiante</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 mb-3 col-md-12 row">                    
+                    <div class="mb-2 col-md-6">
+                        <div class="form-group">
+                            <label class="fw-bold mb-2" for="modalEditarModulo">Módulo</label>
+                            <select class="form-control" id="modalEditarModulo" asp-items="ViewBag.Modulos">
+                                <option value="0">Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-2 col-md-6">
+                        <div class="form-group">
+                            <label class="fw-bold mb-2" for="modalEditarCarrera">Carrera</label>
+                            <select class="form-control" id="modalEditarCarrera" asp-items="ViewBag.Carreras">
+                                <option value="0">Seleccione</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalEditarNombres">Nombres</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalEditarNombres" title="Nombres del estudiante" />
+                    </div>
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalEditarApellidos">Apellidos</label>
+                        <input type="text" class="form-control input-text" maxlength="100" id="modalEditarApellidos" title="Apellidos del estudiante" />
+                    </div>
+                    <div class="mb-2 col-md-6">
+                        <label class="fw-bold mb-2" for="modalEditarMatricula">Matrícula</label>
+                        <input type="text" class="form-control input-text" maxlength="10" id="modalEditarMatricula" title="Matrícula del estudiante" />
+                    </div>
+                    <div class="mb-2 col-md-6">
+                        <label class="fw-bold mb-2" for="modalEditarEmail">Email</label>
+                        <input type="email" class="form-control input-text" maxlength="50" id="modalEditarEmail" title="Email del estudiante" />
+                    </div>
+                    <div class="mb-2">
+                        <label class="fw-bold mb-2" for="modalEditarDireccion">Dirección</label>
+                        <textarea class="form-control" id="modalEditarDireccion" maxlength="100" rows="4">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="editar()">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>    
+
+
+
+</style>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+    $().ready(function(){       
+         prepararPantalla(Pantalla.Estudiante);
+        if ($("#moduloActual").val() && $("#moduloActual").val() != '0') {
+            consultar()
+        }
+    })
+
+    function consultar(recarga = false) {
+        if ($("#nombres").val() == '' && $("#apellidos").val() == '' && $("#matricula").val() == '' &&
+            $("#email").val() == '' && $("#carrera").val() == 0 && $("#modulo").val() == 0) {
+            showToastError('Debe ingresar al menos un criterio de búsqueda');
+            return;
+        }
+        if ($("#modulo").val() == 0) {
+            showToastError('El campo Módulo es obligatorio');
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "GET",
+            url: `@Url.Action("ListarEstudiante", "Operaciones")`,
+            data: obtenerQuery()[PantallaActual],
+            success: function (response) {
+                if(response.length == 0 || response == null){
+                    showToastError("No se encontraron resultados"); 
+                }
+                if(response.redirectToUrl){
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                crearTabla(response, Info[PantallaActual], recarga);
+            },
+            error: function (xhr) {
+                if(xhr.status == 401){
+                    showToastError('Error en autorización del API')
+                }else{
+                    showToastError('Ha ocurrido un error')
+                }
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });        
+    }
+
+    function registrar() {
+        if ($("#modalRegistrarModulo").val() == 0 || $("#modalRegistrarNombres").val() == '' || $("#modalRegistrarApellidos").val() == '' || $("#modalRegistrarMatricula").val() == '') {
+            showToastError('Los campos: Módulo, Nombres, Apellidos y Matrícula son obligatorios');
+            return;
+        }
+        if ($("#modalRegistrarMatricula").val().length < 9) {
+            showToastError("La matrícula debe ser válida");
+            return;
+        }
+        if (!esEmail($("#modalRegistrarEmail").val())) {
+            showToastError("Debe ingresar un Email válido");
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "POST",
+            url: '@Url.Action("RegistrarEstudiante", "Operaciones")',
+            data: obtenerRegistrarRequest()[PantallaActual],
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalRegistrar").modal("hide");
+                showToastOk('El registro se creó correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function registrarGrupo() {
+        if ($("#grupoModulo").val() == 0 || $("#grupoEstudiantes").val() === '') {
+            showToastError('Los campos: Módulo y Estudiantes son obligatorios');
+            return;
+        }
+
+        var formData = new FormData();
+        let file = $("#grupoEstudiantes")[0].files[0];
+        formData.append('Archivo', file);
+        formData.append('Modulo',  $("#grupoModulo").val());
+
+        $.ajax({
+            cache: false,
+            type: "POST",           
+            url: '@Url.Action("RegistrarEstudiantePorGrupo", "Estudiante")',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalRegistrarGrupo").modal("hide");
+
+                var respuestaJS = JSON.parse(response);
+
+                var contador = 0;
+                var contadorRegistrados = 0;
+                respuestaJS.forEach(function (estudiante, index) {                    
+                    setTimeout(function () {
+                        contador++
+                        if (estudiante.id > 0) {
+                            contadorRegistrados++
+                            showToastOk(`Se registró al estudiante ${estudiante.nombres} ${estudiante.apellidos} con matrícula ${estudiante.matricula}`)
+                        } else {
+                            showToastError(`El estudiante ${estudiante.nombres} ${estudiante.apellidos} con matrícula ${estudiante.matricula} ya se encontraba registrado`)
+                        }
+                        if (contador === respuestaJS.length) {
+                            showToastOk(`Proceso completado. Total de estudiantes registrados: ${contadorRegistrados}`)
+                        }
+                    }, 500 * (index + 1));                    
+                });
+
+            },
+            error: function (xhr) {
+                if (xhr.responseText.length > 170) {
+                    showToastError("Debe ingresar un archivo CSV válido");
+                } else {
+                    showToastError(xhr.responseText);
+                }
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+    function editar() {
+        if (!esEmail($("#modalEditarEmail").val())) {
+            showToastError("Debe ingresar un Email válido");
+            return;
+        }
+
+        $.ajax({
+            cache: false,
+            type: "PUT",
+            url: '@Url.Action("EditarEstudiante", "Operaciones")',
+            data: obtenerEditarRequest()[PantallaActual],
+            success: function (response) {
+                if ( response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalEditar").modal("hide");
+                showToastOk('El registro se actualizó correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });        
+    }    
+
+    function eliminar() {
+        var request = {
+            Id: idSeleccionado
+        }
+
+        $.ajax({
+            cache: false,
+            type: "DELETE",
+            url: `@Url.Action("EliminarEstudiante", "Operaciones")`,
+            data: request,
+            success: function (response) {
+                if (response == null) {
+                    showToastError("Ha ocurrido un error");
+                    return;
+                }
+                if (response.redirectToUrl) {
+                    window.location.href = response.redirectToUrl;
+                    return
+                }
+                consultar(true);
+                $("#modalConfirmarEliminacion").modal("hide");
+                showToastOk('El registro fue eliminado correctamente');
+            },
+            error: function (xhr) {
+                showToastError(xhr.responseText);
+                $("#modalConfirmarEliminacion").modal("hide");
+                return false;
+            },
+            beforeSend: function () {
+                mostrarCarga(true);
+            },
+            complete: function () {
+                mostrarCarga(false);
+            }
+        });
+    }
+
+</script>

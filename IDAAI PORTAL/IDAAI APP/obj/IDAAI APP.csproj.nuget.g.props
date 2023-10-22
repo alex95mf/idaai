@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\alex9\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\alex9\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\css\jquery.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\css\jquery.dataTables.css')">
+      <NuGetPackageId>datatables.net-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.13.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\jquery.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\css\jquery.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\css\jquery.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.13.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\jquery.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\js\dataTables.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\js\dataTables.dataTables.js')">
+      <NuGetPackageId>datatables.net-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.13.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\js\dataTables.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-dt\1.13.1\contentFiles\any\any\wwwroot\js\dataTables.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.13.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\css\stateRestore.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\css\stateRestore.dataTables.css')">
+      <NuGetPackageId>datatables.net-staterestore-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.2.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\stateRestore.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\css\stateRestore.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\css\stateRestore.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-staterestore-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.2.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\stateRestore.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\js\stateRestore.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\js\stateRestore.dataTables.js')">
+      <NuGetPackageId>datatables.net-staterestore-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.2.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\stateRestore.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\js\stateRestore.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-staterestore-dt\1.2.0\contentFiles\any\any\wwwroot\js\stateRestore.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-staterestore-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.2.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\stateRestore.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\css\select.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\css\select.dataTables.css')">
+      <NuGetPackageId>datatables.net-select-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.5.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\select.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\css\select.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\css\select.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-select-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.5.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\select.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\js\select.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\js\select.dataTables.js')">
+      <NuGetPackageId>datatables.net-select-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.5.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\select.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\js\select.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-select-dt\1.5.0\contentFiles\any\any\wwwroot\js\select.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-select-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.5.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\select.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\css\searchPanes.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\css\searchPanes.dataTables.css')">
+      <NuGetPackageId>datatables.net-searchpanes-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\searchPanes.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\css\searchPanes.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\css\searchPanes.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-searchpanes-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\searchPanes.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\js\searchPanes.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\js\searchPanes.dataTables.js')">
+      <NuGetPackageId>datatables.net-searchpanes-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\searchPanes.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\js\searchPanes.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchpanes-dt\2.1.0\contentFiles\any\any\wwwroot\js\searchPanes.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-searchpanes-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\searchPanes.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\css\searchBuilder.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\css\searchBuilder.dataTables.css')">
+      <NuGetPackageId>datatables.net-searchbuilder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\searchBuilder.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\css\searchBuilder.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\css\searchBuilder.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-searchbuilder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\searchBuilder.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\js\searchBuilder.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\js\searchBuilder.dataTables.js')">
+      <NuGetPackageId>datatables.net-searchbuilder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\searchBuilder.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\js\searchBuilder.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-searchbuilder-dt\1.4.0\contentFiles\any\any\wwwroot\js\searchBuilder.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-searchbuilder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\searchBuilder.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\css\scroller.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\css\scroller.dataTables.css')">
+      <NuGetPackageId>datatables.net-scroller-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\scroller.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\css\scroller.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\css\scroller.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-scroller-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\scroller.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\js\scroller.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\js\scroller.dataTables.js')">
+      <NuGetPackageId>datatables.net-scroller-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\scroller.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\js\scroller.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-scroller-dt\2.1.0\contentFiles\any\any\wwwroot\js\scroller.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-scroller-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\scroller.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\css\rowReorder.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\css\rowReorder.dataTables.css')">
+      <NuGetPackageId>datatables.net-rowreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\rowReorder.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\css\rowReorder.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\css\rowReorder.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-rowreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\rowReorder.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\js\rowReorder.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\js\rowReorder.dataTables.js')">
+      <NuGetPackageId>datatables.net-rowreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\rowReorder.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\js\rowReorder.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowreorder-dt\1.3.1\contentFiles\any\any\wwwroot\js\rowReorder.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-rowreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\rowReorder.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\css\rowGroup.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\css\rowGroup.dataTables.css')">
+      <NuGetPackageId>datatables.net-rowgroup-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\rowGroup.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\css\rowGroup.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\css\rowGroup.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-rowgroup-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\rowGroup.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\js\rowGroup.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\js\rowGroup.dataTables.js')">
+      <NuGetPackageId>datatables.net-rowgroup-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\rowGroup.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\js\rowGroup.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-rowgroup-dt\1.3.0\contentFiles\any\any\wwwroot\js\rowGroup.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-rowgroup-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.3.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\rowGroup.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\css\responsive.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\css\responsive.dataTables.css')">
+      <NuGetPackageId>datatables.net-responsive-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\responsive.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\css\responsive.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\css\responsive.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-responsive-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\responsive.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\js\responsive.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\js\responsive.dataTables.js')">
+      <NuGetPackageId>datatables.net-responsive-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\responsive.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\js\responsive.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-responsive-dt\2.4.0\contentFiles\any\any\wwwroot\js\responsive.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-responsive-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.4.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\responsive.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-keytable\2.8.0\contentFiles\any\any\wwwroot\js\dataTables.keyTable.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-keytable\2.8.0\contentFiles\any\any\wwwroot\js\dataTables.keyTable.js')">
+      <NuGetPackageId>datatables.net-keytable</NuGetPackageId>
+      <NuGetPackageVersion>2.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.keyTable.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-keytable\2.8.0\contentFiles\any\any\wwwroot\js\dataTables.keyTable.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-keytable\2.8.0\contentFiles\any\any\wwwroot\js\dataTables.keyTable.min.js')">
+      <NuGetPackageId>datatables.net-keytable</NuGetPackageId>
+      <NuGetPackageVersion>2.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.keyTable.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\css\keyTable.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\css\keyTable.dataTables.css')">
+      <NuGetPackageId>datatables.net-keytable-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\keyTable.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\css\keyTable.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\css\keyTable.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-keytable-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\keyTable.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\js\keyTable.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\js\keyTable.dataTables.js')">
+      <NuGetPackageId>datatables.net-keytable-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\keyTable.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\js\keyTable.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-keytable-dt\2.8.0\contentFiles\any\any\wwwroot\js\keyTable.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-keytable-dt</NuGetPackageId>
+      <NuGetPackageVersion>2.8.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\keyTable.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedheader\3.3.1\contentFiles\any\any\wwwroot\js\dataTables.fixedHeader.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedheader\3.3.1\contentFiles\any\any\wwwroot\js\dataTables.fixedHeader.js')">
+      <NuGetPackageId>datatables.net-fixedheader</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.fixedHeader.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedheader\3.3.1\contentFiles\any\any\wwwroot\js\dataTables.fixedHeader.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedheader\3.3.1\contentFiles\any\any\wwwroot\js\dataTables.fixedHeader.min.js')">
+      <NuGetPackageId>datatables.net-fixedheader</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.fixedHeader.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\css\fixedHeader.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\css\fixedHeader.dataTables.css')">
+      <NuGetPackageId>datatables.net-fixedheader-dt</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\fixedHeader.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\css\fixedHeader.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\css\fixedHeader.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-fixedheader-dt</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\fixedHeader.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\js\fixedHeader.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\js\fixedHeader.dataTables.js')">
+      <NuGetPackageId>datatables.net-fixedheader-dt</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\fixedHeader.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\js\fixedHeader.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedheader-dt\3.3.1\contentFiles\any\any\wwwroot\js\fixedHeader.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-fixedheader-dt</NuGetPackageId>
+      <NuGetPackageVersion>3.3.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\fixedHeader.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\css\fixedColumns.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\css\fixedColumns.dataTables.css')">
+      <NuGetPackageId>datatables.net-fixedcolumns-dt</NuGetPackageId>
+      <NuGetPackageVersion>4.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\fixedColumns.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\css\fixedColumns.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\css\fixedColumns.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-fixedcolumns-dt</NuGetPackageId>
+      <NuGetPackageVersion>4.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\fixedColumns.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\js\fixedColumns.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\js\fixedColumns.dataTables.js')">
+      <NuGetPackageId>datatables.net-fixedcolumns-dt</NuGetPackageId>
+      <NuGetPackageVersion>4.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\fixedColumns.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\js\fixedColumns.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-fixedcolumns-dt\4.2.1\contentFiles\any\any\wwwroot\js\fixedColumns.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-fixedcolumns-dt</NuGetPackageId>
+      <NuGetPackageVersion>4.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\fixedColumns.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-colreorder\1.6.1\contentFiles\any\any\wwwroot\js\dataTables.colReorder.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-colreorder\1.6.1\contentFiles\any\any\wwwroot\js\dataTables.colReorder.js')">
+      <NuGetPackageId>datatables.net-colreorder</NuGetPackageId>
+      <NuGetPackageVersion>1.6.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.colReorder.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-colreorder\1.6.1\contentFiles\any\any\wwwroot\js\dataTables.colReorder.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-colreorder\1.6.1\contentFiles\any\any\wwwroot\js\dataTables.colReorder.min.js')">
+      <NuGetPackageId>datatables.net-colreorder</NuGetPackageId>
+      <NuGetPackageVersion>1.6.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\dataTables.colReorder.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\css\colReorder.dataTables.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\css\colReorder.dataTables.css')">
+      <NuGetPackageId>datatables.net-colreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.6.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\colReorder.dataTables.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\css\colReorder.dataTables.min.css" Condition="Exists('$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\css\colReorder.dataTables.min.css')">
+      <NuGetPackageId>datatables.net-colreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.6.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\css\colReorder.dataTables.min.css</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\js\colReorder.dataTables.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\js\colReorder.dataTables.js')">
+      <NuGetPackageId>datatables.net-colreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.6.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\colReorder.dataTables.js</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\js\colReorder.dataTables.min.js" Condition="Exists('$(NuGetPackageRoot)datatables.net-colreorder-dt\1.6.1\contentFiles\any\any\wwwroot\js\colReorder.dataTables.min.js')">
+      <NuGetPackageId>datatables.net-colreorder-dt</NuGetPackageId>
+      <NuGetPackageVersion>1.6.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\colReorder.dataTables.min.js</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.17.0\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.visualstudio.azure.containers.tools.targets\1.17.0\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\alex9\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.17.0</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\alex9\.nuget\packages\jquery\3.5.1</PkgjQuery>
+    <PkgDevExtreme_Web Condition=" '$(PkgDevExtreme_Web)' == '' ">C:\Users\alex9\.nuget\packages\devextreme.web\22.2.3</PkgDevExtreme_Web>
+  </PropertyGroup>
+</Project>

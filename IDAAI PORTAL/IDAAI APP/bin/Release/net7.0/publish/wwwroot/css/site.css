@@ -1,0 +1,114 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 1rem;
+}
+
+#cargando {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #2a2a2a55;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 100%;
+    color: #FFF;
+    transform: translateY(-50%);
+    z-index: 1000;
+    align-items: center;
+}
+
+.imagenFondo {
+    background-image: linear-gradient(rgba(255,255,255,0.69), rgba(255,255,255,0.69)), url(../images/lstEspol.jpg);
+}
+
+.contenedor {
+    height: 42rem;
+}
+
+.texto-sombra {
+    text-shadow: 1px 1px 0px black;
+    color: black;
+    font: 1.5em Arial, serif;
+}
+
+.contenedorLaboratorio {
+    width: 80vw !important;
+    height: 20rem;
+}
+
+.botonlab {
+    padding-top: 15%;
+    padding-bottom: 20%;
+    max-height: 10rem;
+    text-align: center;
+}
+
+.btn-1 {
+    width: 350px;
+    display: inline-grid;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.btn-2 {
+    width: 350px;
+    display: inline-grid;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.btn-1.opaco {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.btn-2.opaco {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.btn-1.active {
+    width:500px;
+    transform: scale(1.5) perspective(1);
+}
+
+.btn-2.active {
+    width: 500px;
+    transform: scale(1.5) perspective(1);
+}
+
+.laboratorioAbierto {
+    width: 100% !important;
+    z-index: -1;
+}
+
+.laboratorioAbierto:hover {
+    padding-left: 5rem !important;
+}
+
+.laboratorioClase {
+    width: 100% !important;
+}
+
+.laboratorioClase:hover {
+    padding-right: 5rem !important;
+}

@@ -1,0 +1,145 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = IDAAI_APP
+build_property.RootNamespace = IDAAI_APP
+build_property.ProjectDir = D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Archivos\Materia Integradora\IDAAI\Proyecto IDAAI\IDAAI PORTAL\IDAAI APP
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Home/AsistenciaEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBc2lzdGVuY2lhRXN0dWRpYW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Home/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioAbierto/Asistencia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9BYmllcnRvXEFzaXN0ZW5jaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioAbierto/Carrera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9BYmllcnRvXENhcnJlcmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioAbierto/Estudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9BYmllcnRvXEVzdHVkaWFudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioAbierto/Inventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9BYmllcnRvXEludmVudGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioAbierto/Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9BYmllcnRvXEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioAbierto/Modulo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9BYmllcnRvXE1vZHVsby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioAbierto/Prestamo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9BYmllcnRvXFByZXN0YW1vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Asistencia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcQXNpc3RlbmNpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Carrera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcQ2FycmVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Clase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcQ2xhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Estudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcRXN0dWRpYW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Inventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcSW52ZW50YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcSXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Modulo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcTW9kdWxvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/LaboratorioClases/Prestamo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yaW9DbGFzZXNcUHJlc3RhbW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Menu/AsistenciaEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxBc2lzdGVuY2lhRXN0dWRpYW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Menu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Menu/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxQZXJmaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fo5dn9z2bx
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/_LayoutAsistenciaEstudiante.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBc2lzdGVuY2lhRXN0dWRpYW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-g5be1pyc3i
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/_LayoutLaboratorioAbierto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMYWJvcmF0b3Jpb0FiaWVydG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-l1z3n2xbmu
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/_LayoutLaboratorioClases.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMYWJvcmF0b3Jpb0NsYXNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-h29hccu4sb
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/_LayoutMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-c5jguva9ia
+
+[D:/Archivos/Materia Integradora/IDAAI/Proyecto IDAAI/IDAAI PORTAL/IDAAI APP/Views/Shared/_Lib.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MaWIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4j1p6v8thj
